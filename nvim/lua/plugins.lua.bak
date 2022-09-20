@@ -1,0 +1,9 @@
+return require('packer').startup(function(use) 
+
+ -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use 'neovim/nvim-lspconfig'
+  -- You can alias plugin names
+  use {'joshdick/onedark.vim', as = 'onedark'}
+
+end)
