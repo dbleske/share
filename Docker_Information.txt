@@ -1,0 +1,28 @@
+1. Find a docker image
+docker search alpine
+
+2. Download image
+docker pull alpine:latest
+
+3. Create and start container
+docker container create -i -t --name mycontainer alpine
+docker container start --attach -i mycontainer
+OR
+docker run -it --name mycontainer2 alpine
+
+4. Start and stop container
+docker start mycontainer
+docker stop my container
+
+5. Delete container
+docker container rm  mycontainer
+
+6. Delete image
+docker image rm alpine
+
+7. Run application from container
+docker start mycontainer
+docker exec -ti mycontainer ls -a 
+
+*Start Docker service: 'service docker start' OR 'systemctl start docker' (debian/ubuntu)
+**Docker requires running as root
